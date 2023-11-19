@@ -169,7 +169,7 @@ def run(input_path, output_path, model_path, model_type="dpt_beit_large_512", op
 
     else:
         with torch.no_grad():
-            fps = 1
+            fps = 15
             video = VideoStream(0).start()
             time_start = time.time()
             frame_index = 0
@@ -275,3 +275,5 @@ if __name__ == "__main__":
     # compute depth maps
     run(args.input_path, args.output_path, args.model_weights, args.model_type, args.optimize, args.side, args.height,
         args.square, args.grayscale)
+
+# python run.py --model_type dpt_beit_large_512 --side
