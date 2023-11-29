@@ -3,7 +3,8 @@ channels:
   - pytorch
   - defaults
 dependencies:
-  - nvidia::cudatoolkit=12.3
+  - pkgs/main::cudatoolkit=11.8.0
+#  - nvidia::cudatoolkit=11.5.0
   - python=3.10.8
   - pytorch::pytorch=1.13.0
   - torchvision=0.14.0

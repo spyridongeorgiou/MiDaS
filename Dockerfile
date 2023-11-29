@@ -40,4 +40,4 @@ RUN apt-get update && apt-get -y install \
 # entrypoint (dont forget to mount input and output directories)
 #CMD python3 run.py --model_type dpt_hybrid
 #CMD python3 run.py --model_type dpt_beit_large_512 --side
-#CMD ["python3", "run.py", "--model_type", "dpt_beit_large_512"]
+CMD ["python3", "run.py", "--model_type", "dpt_beit_large_512"]
